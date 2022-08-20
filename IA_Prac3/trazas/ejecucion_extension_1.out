@@ -1,0 +1,93 @@
+
+ff: parsing domain file
+domain 'ROVER' defined
+ ... done.
+ff: parsing problem file
+problem 'ROVERPROB01' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+advancing to distance:   22
+                         21
+                         20
+                         19
+                         18
+                         17
+                         16
+                         15
+                         14
+                         13
+                         12
+                         11
+                         10
+                          9
+                          8
+                          7
+                          6
+                          5
+                          4
+                          3
+                          2
+                          1
+                          0
+
+ff: found legal plan as follows
+
+step    0: MOVE_TO_LUGAR ASE_B ASE_A R
+        1: ADD_PERSONAL E R ASE_A
+        2: MOVE_TO_LUGAR ASE_A ASE_B R
+        3: DROP_PERSONAL R E ASE_B EE
+        4: MOVE_TO_LUGAR ASE_B ASE_A R
+        5: ADD_PERSONAL D R ASE_A
+        6: MOVE_TO_LUGAR ASE_A ASE_B R
+        7: DROP_PERSONAL R D ASE_B DD
+        8: MOVE_TO_LUGAR ASE_B ASE_A R
+        9: ADD_PERSONAL C R ASE_A
+       10: MOVE_TO_LUGAR ASE_A ASE_B R
+       11: DROP_PERSONAL R C ASE_B CC
+       12: MOVE_TO_LUGAR ASE_B ASE_A R
+       13: ADD_PERSONAL B R ASE_A
+       14: MOVE_TO_LUGAR ASE_A ASE_B R
+       15: DROP_PERSONAL R B ASE_B BB
+       16: MOVE_TO_LUGAR ASE_B ASE_A R
+       17: ADD_PERSONAL A R ASE_A
+       18: MOVE_TO_LUGAR ASE_A ASE_B R
+       19: DROP_PERSONAL R A ASE_B AA
+       20: MOVE_TO_LUGAR ASE_B ASE_A R
+       21: MOVE_TO_LUGAR ASE_A ALM R
+       22: ADD_SUMINISTRO Z R ALM
+       23: MOVE_TO_LUGAR ALM ASE_A R
+       24: DROP_SUMINISTRO R Z ASE_A EE
+       25: MOVE_TO_LUGAR ASE_A ALM R
+       26: ADD_SUMINISTRO Y R ALM
+       27: MOVE_TO_LUGAR ALM ASE_A R
+       28: DROP_SUMINISTRO R Y ASE_A DD
+       29: MOVE_TO_LUGAR ASE_A ALM R
+       30: ADD_SUMINISTRO X R ALM
+       31: MOVE_TO_LUGAR ALM ASE_A R
+       32: DROP_SUMINISTRO R X ASE_A CC
+       33: MOVE_TO_LUGAR ASE_A ALM R
+       34: ADD_SUMINISTRO W R ALM
+       35: MOVE_TO_LUGAR ALM ASE_A R
+       36: DROP_SUMINISTRO R W ASE_A BB
+       37: MOVE_TO_LUGAR ASE_A ALM R
+       38: ADD_SUMINISTRO V R ALM
+       39: MOVE_TO_LUGAR ALM ASE_A R
+       40: DROP_SUMINISTRO R V ASE_A AA
+     
+
+time spent:    0.00 seconds instantiating 115 easy, 4 hard action templates
+               0.00 seconds reachability analysis, yielding 86 facts and 64 actions
+               0.00 seconds creating final representation with 66 relevant facts, 4 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 181 states, to a max depth of 0
+               0.00 seconds total time
+

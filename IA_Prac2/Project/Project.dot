@@ -1,0 +1,24 @@
+digraph Project {
+	node [label="\N"];
+	graph [bb="0,0,396,952"];
+	Debilidad [label="{Debilidad|{tipoDebilidad|String}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="71,668", rects="0,668,142,691 0,645,92,668 92,645,142,668", width="1.9722", height="0.65278"];
+	Planificacion [label="{Planificacion|{asignaciones|Instance*|{Asignacion}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="278,668", rects="160,668,396,691 160,645,247,668 247,645,317,668 317,645,396,668", width="3.2778", height="0.65278"];
+	Asignacion [label="{Asignacion|{actividad|Instance|{Actividad}}|{diaSemana|Symbol|{Lunes|Martes|Miercoles|...}}|{hora_ini|Integer}|{hora_fin|Integer\
+}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="278,499", rects="174,568,382,591 174,545,243,568 243,545,308,568 308,545,382,568 174,453,251,545 251,453,311,545 311,522,382,545 311,499,382,522 \
+311,476,382,499 311,453,382,476 174,430,281,453 281,430,382,453 174,407,282,430 282,407,382,430", width="2.8889", height="2.5694"];
+	Beneficio [label="{Beneficio|{tipoBeneficio|Symbol|{Resistencia|Flexibilidad|Fuerza|...}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="278,58", rects="162,92.5,394,115.5 162,0.5,253,92.5 253,0.5,313,92.5 313,69.5,394,92.5 313,46.5,394,69.5 313,23.5,394,46.5 313,0.5,394,23.5", width="3.2222", height="1.6111"];
+	Paciente [label="{Paciente|{condicion|Symbol|{muyDescondicionado|desentrenado|algoEntrenado|...}}|{nombre|String}|{edad|Integer}|{debilidades|Instance\
+*|{Debilidad}}|{planificacion|Instance*|{Planificacion}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="146,848", rects="10.5,928.5,281.5,951.5 10.5,836.5,82.5,928.5 82.5,836.5,142.5,928.5 142.5,905.5,281.5,928.5 142.5,882.5,281.5,905.5 142.5,859.5,\
+281.5,882.5 142.5,836.5,281.5,859.5 10.5,813.5,150.5,836.5 150.5,813.5,281.5,836.5 10.5,790.5,140.5,813.5 140.5,790.5,281.5,813.5\
+ 10.5,767.5,107.5,790.5 107.5,767.5,194.5,790.5 194.5,767.5,281.5,790.5 10.5,744.5,105.5,767.5 105.5,744.5,184.5,767.5 184.5,744.5\
+,281.5,767.5", width="3.7569", height="2.8889"];
+	Actividad [label="{Actividad|{frequencia|Integer}|{intensidad|Symbol|{Baja|Media|Alta}}|{duracion|Integer}|{beneficios|Instance*|{Beneficio}}|{progesion\
+|Symbol|{}}}", shape=record, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="278,261", rects="171.5,330,384.5,353 171.5,307,287.5,330 287.5,307,384.5,330 171.5,238,253.5,307 253.5,238,323.5,307 323.5,284,384.5,307 323.5,261\
+,384.5,284 323.5,238,384.5,261 171.5,215,282.5,238 282.5,215,384.5,238 171.5,192,245.5,215 245.5,192,315.5,215 315.5,192,384.5,\
+215 171.5,169,263.5,192 263.5,169,343.5,192 343.5,169,384.5,192", width="2.9514", height="2.5694"];
+	Planificacion -> Asignacion [style=filled, label="asignaciones*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,278,591.1 278,644.82 278,633.07 278,617.7 278,601.37", lp="317,618"];
+	Paciente -> Debilidad [style=filled, label="debilidades*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,80.378,691.26 102.81,744.49 96.126,728.63 89.693,713.36 84.381,700.76", lp="128,718"];
+	Paciente -> Planificacion [style=filled, label="planificacion*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,261.49,691.26 222.02,744.49 234.13,728.16 245.77,712.46 255.28,699.64", lp="285,718"];
+	Asignacion -> Actividad [style=filled, label=actividad, color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,278,353 278,406.76 278,392.56 278,377.82 278,363.42", lp="303.5,380"];
+	Actividad -> Beneficio [style=filled, label="beneficios*", color="0.6666667,1.0,1.0", fontcolor="0.6666667,1.0,1.0", pos="e,278,115.54 278,168.91 278,154.42 278,139.68 278,125.88", lp="310,142"];
+}

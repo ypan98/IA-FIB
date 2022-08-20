@@ -1,0 +1,314 @@
+; Mon Dec 10 22:40:52 CET 2018
+; 
+;+ (version "3.5")
+;+ (build "Build 663")
+
+
+(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+	(is-a USER)
+	(role abstract)
+	(single-slot tipoObjecto
+		(type SYMBOL)
+		(allowed-values Colchoneta Pesas)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot calentamiento
+		(type INSTANCE)
+;+		(allowed-classes FaseCalentamiento)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot zonasFCMax
+		(type SYMBOL)
+		(allowed-values ZonaUmbralAnaerobico ZonaControlDePeso ZonaDeActividadModerada ZonaAerobica)
+		(create-accessor read-write))
+	(single-slot condicion
+		(type SYMBOL)
+		(allowed-values muyDescondicionado desentrenado algoEntrenado entrenado Null)
+		(default Null)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot duracionEsfuerzo
+		(type INTEGER)
+		(range 20 60)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot nombreActividad
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot enfermedades
+		(type INSTANCE)
+;+		(allowed-classes)
+		(create-accessor read-write))
+	(single-slot nombrePaciente
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot duracion
+		(type INTEGER)
+		(range 1 60)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot beneficios
+		(type SYMBOL)
+		(allowed-values Resistencia Flexibilidad Fuerza Potencia Coordinacion Agilidad ControlPeso)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot sexo
+		(type SYMBOL)
+		(allowed-values M F)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot faseMejora
+		(type INSTANCE)
+;+		(allowed-classes Sesion)
+		(create-accessor read-write))
+	(multislot antecedentesNoAptos
+		(type SYMBOL)
+		(allowed-values Caida Hipertension Neuropatia Artrosis EnfermedadPulmonal Diabetes Displemia Osteoporosis Artritis Fibrosis)
+		(create-accessor read-write))
+	(multislot partesCuerpo
+		(type SYMBOL)
+		(allowed-values Cabeza Brazos Espalda Piernas Tronco Cadera Abdominal)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot recuperacion
+		(type INSTANCE)
+;+		(allowed-classes FaseRecuperacion)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot zonaFCMax
+		(type SYMBOL)
+		(allowed-values ZonaUmbralAnaerobico ZonaControlDePeso ZonaDeActividadModerada ZonaAerobica)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot tipoDebilidad
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot frequencia
+		(type INTEGER)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot asignaciones
+		(type INSTANCE)
+;+		(allowed-classes)
+		(cardinality 3 7)
+		(create-accessor read-write))
+	(single-slot nombreEnfermedad
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot planificacion
+		(type INSTANCE)
+;+		(allowed-classes Planificacion)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot calentamientoRequerido
+		(type INSTANCE)
+;+		(allowed-classes FaseCalentamiento)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot maxDuracion
+		(type INTEGER)
+		(default 60)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot actividad
+		(type INSTANCE)
+;+		(allowed-classes Actividad)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot faseInicial
+		(type INSTANCE)
+;+		(allowed-classes Sesion)
+		(create-accessor read-write))
+	(single-slot nDias
+		(type INTEGER)
+		(range 3 7)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot esfuerzo
+		(type INSTANCE)
+;+		(allowed-classes FaseEsfuerzo)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot FCMax
+;+		(comment "hombre: 214 – (0,79*edad)	mujer:  209 – (0,72*edad)")
+		(type INTEGER)
+		(range -1 220)
+		(default -1)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot antecedentes
+		(type SYMBOL)
+		(allowed-values Caida Hipertension Neuropatia Obesidad Artrosis EnfermedadPulmonal Displemia Diabetes Osteoporosis Artritis Fibrosis)
+		(create-accessor read-write))
+	(single-slot intensidad
+		(type SYMBOL)
+		(allowed-values Baja Media Alta)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot minDuracion
+		(type INTEGER)
+		(default 15)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot sesiones
+		(type INSTANCE)
+;+		(allowed-classes Sesion)
+		(create-accessor read-write))
+	(single-slot duracionCalentamiento
+		(type INTEGER)
+		(range 5 10)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot edad
+		(type INTEGER)
+		(range -1 100)
+		(default -1)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot faseMantenimiento
+		(type INSTANCE)
+;+		(allowed-classes Sesion)
+		(create-accessor read-write))
+	(single-slot duracionRecuperacion
+		(type INTEGER)
+		(range 5 10)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Paciente
+	(is-a USER)
+	(role concrete)
+	(single-slot sexo
+		(type SYMBOL)
+		(allowed-values M F Null)
+		(default Null)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot nombrePaciente
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot edad
+		(type INTEGER)
+		(range -1 100)
+		(default -1)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot planificacion
+		(type INSTANCE)
+;+		(allowed-classes Planificacion)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot condicion
+		(type SYMBOL)
+		(allowed-values muyDescondicionado desentrenado algoEntrenado entrenado Null)
+		(default Null)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot antecedentes
+		(type SYMBOL)
+		(allowed-values Caida Hipertension Neuropatia Obesidad Artrosis EnfermedadPulmonal Displemia Diabetes Osteoporosis Artritis Fibrosis)
+		(create-accessor read-write)))
+
+(defclass Sesion
+	(is-a USER)
+	(role concrete)
+	(single-slot recuperacion
+		(type INSTANCE)
+;+		(allowed-classes FaseRecuperacion)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot calentamiento
+		(type INSTANCE)
+;+		(allowed-classes FaseCalentamiento)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot esfuerzo
+		(type INSTANCE)
+;+		(allowed-classes FaseEsfuerzo)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Actividad
+	(is-a USER)
+	(role concrete)
+	(multislot partesCuerpo
+		(type SYMBOL)
+		(allowed-values Cabeza Brazos Espalda Piernas Tronco Cadera Abdominal)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot duracion
+		(type INTEGER)
+		(range 1 60)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot nombreActividad
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass FaseCalentamiento
+	(is-a Actividad)
+	(role concrete))
+
+(defclass FaseEsfuerzo
+	(is-a Actividad)
+	(role concrete)
+	(multislot antecedentesNoAptos
+		(type SYMBOL)
+		(allowed-values Caida Hipertension Neuropatia Artrosis EnfermedadPulmonal Diabetes Displemia Osteoporosis Artritis Fibrosis)
+		(create-accessor read-write))
+	(single-slot zonaFCMax
+		(type SYMBOL)
+		(allowed-values ZonaUmbralAnaerobico ZonaControlDePeso ZonaDeActividadModerada ZonaAerobica)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot beneficios
+		(type SYMBOL)
+		(allowed-values Resistencia Flexibilidad Fuerza Potencia Coordinacion Agilidad ControlPeso)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write)))
+
+(defclass FaseRecuperacion
+	(is-a Actividad)
+	(role concrete))
+
+(defclass %3AUNDEFINED
+	(is-a USER)
+	(role concrete))
+
+(defclass Planificacion "cada uno son vectores de sesiones"
+	(is-a USER)
+	(role concrete)
+	(single-slot maxDuracion
+		(type INTEGER)
+		(default 60)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot minDuracion
+		(type INTEGER)
+		(default 15)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot sesiones
+		(type INSTANCE)
+;+		(allowed-classes Sesion)
+		(create-accessor read-write))
+	(single-slot nDias
+		(type INTEGER)
+		(range 3 7)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot beneficios
+		(type SYMBOL)
+		(allowed-values Resistencia Flexibilidad Fuerza Potencia Coordinacion Agilidad ControlPeso)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(multislot zonasFCMax
+		(type SYMBOL)
+		(allowed-values ZonaUmbralAnaerobico ZonaControlDePeso ZonaDeActividadModerada ZonaAerobica)
+		(create-accessor read-write)))

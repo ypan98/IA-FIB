@@ -1,0 +1,6 @@
+(clear)
+(load "Project.pont")
+(load "reglas.clp")
+(reset)
+(load-instances "Project.pins")
+(run)

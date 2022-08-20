@@ -1,0 +1,324 @@
+; Mon Dec 10 22:41:04 CET 2018
+; 
+;+ (version "3.5")
+;+ (build "Build 663")
+
+([Project_Class0] of  FaseEsfuerzo
+
+	(beneficios Flexibilidad)
+	(duracion 60)
+	(nombreActividad "Yoga")
+	(partesCuerpo Tronco Cabeza Espalda Brazos)
+	(zonaFCMax ZonaDeActividadModerada))
+
+([Project_Class1] of  FaseEsfuerzo
+
+	(antecedentesNoAptos Caida)
+	(beneficios Resistencia Fuerza)
+	(duracion 30)
+	(nombreActividad "Escalada")
+	(partesCuerpo Espalda Brazos Piernas)
+	(zonaFCMax ZonaControlDePeso))
+
+([Project_Class10000] of  FaseCalentamiento
+
+	(duracion 2)
+	(nombreActividad "Inclinacion del tronco en combinacion de giros")
+	(partesCuerpo Tronco Brazos))
+
+([Project_Class10014] of  FaseCalentamiento
+
+	(duracion 10)
+	(nombreActividad "Calentamiento Partes superiores")
+	(partesCuerpo Cabeza Brazos Espalda Tronco))
+
+([Project_Class10015] of  FaseEsfuerzo
+
+	(beneficios Resistencia Coordinacion Agilidad ControlPeso)
+	(duracion 60)
+	(nombreActividad "Natacion")
+	(partesCuerpo Espalda Brazos Piernas)
+	(zonaFCMax ZonaControlDePeso))
+
+([Project_Class10016] of  FaseRecuperacion
+
+	(duracion 10)
+	(nombreActividad "Recuperacion Partes superiores")
+	(partesCuerpo Brazos Cabeza Tronco Cadera))
+
+([Project_Class10022] of  FaseEsfuerzo
+
+	(antecedentesNoAptos Neuropatia)
+	(beneficios Resistencia Coordinacion ControlPeso)
+	(duracion 60)
+	(nombreActividad "Correr")
+	(partesCuerpo Piernas)
+	(zonaFCMax ZonaDeActividadModerada))
+
+([Project_Class10024] of  FaseEsfuerzo
+
+	(antecedentesNoAptos Neuropatia Hipertension)
+	(beneficios Coordinacion Potencia)
+	(duracion 45)
+	(nombreActividad "Gimnasia Pesas")
+	(partesCuerpo Tronco Piernas Abdominal)
+	(zonaFCMax ZonaAerobica))
+
+([Project_Class20000] of  FaseCalentamiento
+
+	(duracion 2)
+	(nombreActividad "Inclinacion del tronco")
+	(partesCuerpo Tronco))
+
+([Project_Class20001] of  FaseCalentamiento
+
+	(duracion 2)
+	(nombreActividad "Rotacion de caderas")
+	(partesCuerpo Cadera))
+
+([Project_Class20002] of  FaseCalentamiento
+
+	(duracion 5)
+	(nombreActividad "Musculos abdominales")
+	(partesCuerpo Abdominal))
+
+([Project_Class20003] of  FaseCalentamiento
+
+	(duracion 3)
+	(nombreActividad "Musculos de la espalda")
+	(partesCuerpo Espalda))
+
+([Project_Class20004] of  FaseCalentamiento
+
+	(duracion 2)
+	(nombreActividad "Rotacion de brazos")
+	(partesCuerpo Brazos))
+
+([Project_Class20005] of  FaseRecuperacion
+
+	(duracion 2)
+	(nombreActividad "Inclinacion del tronco en combinacion de giros")
+	(partesCuerpo Brazos Tronco))
+
+([Project_Class20006] of  FaseRecuperacion
+
+	(duracion 2)
+	(nombreActividad "Inclinacion del tronco")
+	(partesCuerpo Tronco))
+
+([Project_Class20007] of  FaseRecuperacion
+
+	(duracion 5)
+	(nombreActividad "Estiramiento de abdominales")
+	(partesCuerpo Abdominal))
+
+([Project_Class20008] of  FaseRecuperacion
+
+	(duracion 3)
+	(nombreActividad "Estiramiento de la espalda")
+	(partesCuerpo Espalda))
+
+([Project_Class20009] of  FaseRecuperacion
+
+	(duracion 3)
+	(nombreActividad "Rotacion de brazos")
+	(partesCuerpo Brazos))
+
+([Project_Class20010] of  FaseRecuperacion
+
+	(duracion 2)
+	(nombreActividad "Rotacion de caderas")
+	(partesCuerpo Cadera))
+
+([Project_Class20011] of  FaseCalentamiento
+
+	(duracion 4)
+	(nombreActividad "Talones al culo")
+	(partesCuerpo Piernas Cadera))
+
+([Project_Class20012] of  FaseRecuperacion
+
+	(duracion 4)
+	(nombreActividad "Talones al culo")
+	(partesCuerpo Piernas Cadera))
+
+([Project_Class20013] of  FaseCalentamiento
+
+	(duracion 3)
+	(nombreActividad "Rodillas arriba")
+	(partesCuerpo Piernas))
+
+([Project_Class20014] of  FaseRecuperacion
+
+	(duracion 3)
+	(nombreActividad "Rodillas arriba")
+	(partesCuerpo Piernas))
+
+([Project_Class3] of  FaseEsfuerzo
+
+	(beneficios Resistencia Potencia)
+	(duracion 55)
+	(nombreActividad "Karate")
+	(partesCuerpo Brazos Piernas Cadera Abdominal)
+	(zonaFCMax ZonaControlDePeso))
+
+([Project_Class30000] of  FaseEsfuerzo
+
+	(antecedentesNoAptos Hipertension)
+	(beneficios Potencia Fuerza)
+	(duracion 50)
+	(nombreActividad "Body Pumb")
+	(partesCuerpo Brazos Abdominal Piernas)
+	(zonaFCMax ZonaUmbralAnaerobico))
+
+([Project_Class30001] of  FaseEsfuerzo
+
+	(beneficios ControlPeso)
+	(duracion 60)
+	(nombreActividad "caminar")
+	(partesCuerpo Piernas)
+	(zonaFCMax ZonaDeActividadModerada))
+
+([Project_Class4] of  FaseEsfuerzo
+
+	(beneficios Resistencia Fuerza)
+	(duracion 45)
+	(nombreActividad "Tennis")
+	(partesCuerpo Piernas Brazos Tronco)
+	(zonaFCMax ZonaDeActividadModerada))
+
+([Project_Class40000] of  FaseEsfuerzo
+
+	(antecedentesNoAptos EnfermedadPulmonal)
+	(beneficios Resistencia Potencia)
+	(duracion 45)
+	(nombreActividad "Ciclismo")
+	(partesCuerpo Piernas)
+	(zonaFCMax ZonaControlDePeso))
+
+([Project_Class40001] of  FaseCalentamiento
+
+	(duracion 5)
+	(nombreActividad "Estiramiento Cuadriceps")
+	(partesCuerpo Piernas))
+
+([Project_Class40002] of  FaseRecuperacion
+
+	(duracion 5)
+	(nombreActividad "Estiramiento Cuadriceps")
+	(partesCuerpo Piernas))
+
+([Project_Class40003] of  FaseEsfuerzo
+
+	(beneficios Fuerza)
+	(duracion 30)
+	(nombreActividad "La bicicleta (Abdominales)")
+	(partesCuerpo Abdominal)
+	(zonaFCMax ZonaUmbralAnaerobico))
+
+([Project_Class40004] of  FaseEsfuerzo
+
+	(antecedentesNoAptos EnfermedadPulmonal)
+	(beneficios Coordinacion ControlPeso)
+	(duracion 30)
+	(nombreActividad "Subir Escaleras")
+	(partesCuerpo Piernas)
+	(zonaFCMax ZonaDeActividadModerada))
+
+([Project_Class40005] of  FaseEsfuerzo
+
+	(antecedentesNoAptos Caida)
+	(beneficios Coordinacion Flexibilidad)
+	(duracion 40)
+	(nombreActividad "Danza")
+	(partesCuerpo Brazos Piernas Cadera)
+	(zonaFCMax ZonaDeActividadModerada))
+
+([Project_Class50000] of  FaseEsfuerzo
+
+	(antecedentesNoAptos Caida EnfermedadPulmonal Hipertension)
+	(beneficios Potencia Coordinacion)
+	(duracion 30)
+	(nombreActividad "Sprint")
+	(partesCuerpo Piernas)
+	(zonaFCMax ZonaUmbralAnaerobico))
+
+([Project_Class50001] of  FaseEsfuerzo
+
+	(antecedentesNoAptos Artritis)
+	(beneficios Potencia Fuerza)
+	(duracion 35)
+	(nombreActividad "Combinacion de Flexiones")
+	(partesCuerpo Brazos Espalda)
+	(zonaFCMax ZonaUmbralAnaerobico))
+
+([Project_Class50002] of  FaseEsfuerzo
+
+	(beneficios Fuerza)
+	(duracion 40)
+	(nombreActividad "Sentadillas")
+	(partesCuerpo Piernas)
+	(zonaFCMax ZonaUmbralAnaerobico))
+
+([Project_Class50003] of  FaseEsfuerzo
+
+	(antecedentesNoAptos Caida EnfermedadPulmonal)
+	(beneficios Resistencia Coordinacion Potencia)
+	(duracion 45)
+	(nombreActividad "Futbol")
+	(partesCuerpo Piernas Cabeza)
+	(zonaFCMax ZonaAerobica))
+
+([Project_Class50004] of  FaseCalentamiento
+
+	(duracion 2)
+	(nombreActividad "Rotacion de cabeza")
+	(partesCuerpo Cabeza))
+
+([Project_Class50005] of  FaseRecuperacion
+
+	(duracion 3)
+	(nombreActividad "Rotacion de Cabeza")
+	(partesCuerpo Cabeza))
+
+([Project_Class50006] of  FaseEsfuerzo
+
+	(beneficios Fuerza)
+	(duracion 35)
+	(nombreActividad "Peso Muerto")
+	(partesCuerpo Espalda Piernas)
+	(zonaFCMax ZonaControlDePeso))
+
+([Project_Class50007] of  FaseEsfuerzo
+
+	(beneficios Resistencia Agilidad ControlPeso)
+	(duracion 40)
+	(nombreActividad "Saltar la Cuerda")
+	(partesCuerpo Piernas Brazos)
+	(zonaFCMax ZonaControlDePeso))
+
+([Project_Class50008] of  FaseEsfuerzo
+
+	(antecedentesNoAptos EnfermedadPulmonal)
+	(beneficios Fuerza Agilidad)
+	(duracion 40)
+	(nombreActividad "CrossFit")
+	(partesCuerpo Brazos Piernas Abdominal)
+	(zonaFCMax ZonaControlDePeso))
+
+([Project_Class50009] of  FaseEsfuerzo
+
+	(antecedentesNoAptos Caida)
+	(beneficios Coordinacion Agilidad)
+	(duracion 30)
+	(nombreActividad "Malabares")
+	(partesCuerpo Brazos)
+	(zonaFCMax ZonaDeActividadModerada))
+
+([Project_Class50010] of  FaseEsfuerzo
+
+	(beneficios Agilidad Coordinacion Flexibilidad)
+	(duracion 45)
+	(nombreActividad "Carrera de Obstaculos")
+	(partesCuerpo Piernas Brazos)
+	(zonaFCMax ZonaDeActividadModerada))

@@ -1,0 +1,77 @@
+
+ff: parsing domain file
+domain 'ROVER' defined
+ ... done.
+ff: parsing problem file
+problem 'CON_MINIMIZAR' defined
+ ... done.
+
+
+metric established (normalized to minimize): ((1.00*[RF0](TOTAL_FUEL_USED)) - () + 0.00)
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is  best-first on 1*g(s) + 5*h(s) where
+    metric is ((1.00*[RF0](TOTAL_FUEL_USED)) - () + 0.00)
+
+advancing to distance:   18
+                         17
+                         16
+                         15
+                         14
+                         13
+                         12
+                         11
+                         10
+                          9
+                          8
+                          7
+                          6
+                          5
+                          4
+                          3
+                          2
+                          1
+                          0
+
+ff: found legal plan as follows
+
+step    0: MOVE_TO_LUGAR ASE_B ASE_A R
+        1: ADD_PERSONAL C R ASE_A
+        2: ADD_PERSONAL D R ASE_A
+        3: MOVE_TO_LUGAR ASE_A ASE_B R
+        4: DROP_PERSONAL R C ASE_B BB
+        5: DROP_PERSONAL R D ASE_B CC
+        6: MOVE_TO_LUGAR ASE_B ASE_A R
+        7: ADD_PERSONAL A R ASE_A
+        8: ADD_PERSONAL B R ASE_A
+        9: MOVE_TO_LUGAR ASE_A ASE_B R
+       10: DROP_PERSONAL R A ASE_B DD
+       11: DROP_PERSONAL R B ASE_B EE
+       12: MOVE_TO_LUGAR ASE_B ASE_A R
+       13: MOVE_TO_LUGAR ASE_A ALM R
+       14: ADD_SUMINISTRO Z R ALM
+       15: MOVE_TO_LUGAR ALM ASE_A R
+       16: DROP_SUMINISTRO R Z ASE_A CC
+       17: MOVE_TO_LUGAR ASE_A ALM R
+       18: ADD_SUMINISTRO Y R ALM
+       19: MOVE_TO_LUGAR ALM ASE_A R
+       20: DROP_SUMINISTRO R Y ASE_A DD
+       21: MOVE_TO_LUGAR ASE_A ALM R
+       22: ADD_SUMINISTRO X R ALM
+       23: MOVE_TO_LUGAR ALM ASE_A R
+       24: DROP_SUMINISTRO R X ASE_A EE
+       25: MOVE_TO_LUGAR ASE_A ALM R
+       26: ADD_SUMINISTRO W R ALM
+       27: MOVE_TO_LUGAR ALM ASE_A R
+       28: DROP_SUMINISTRO R W ASE_A AA
+     
+
+time spent:    0.00 seconds instantiating 140 easy, 4 hard action templates
+               0.00 seconds reachability analysis, yielding 80 facts and 52 actions
+               0.00 seconds creating final representation with 64 relevant facts, 6 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+              14.92 seconds searching, evaluating 174112 states, to a max depth of 0
+              14.92 seconds total time
+

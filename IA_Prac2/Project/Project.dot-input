@@ -1,0 +1,20 @@
+digraph "Project" {
+
+"Tennis" [shape=box, label="Tennis", color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+"Actividad"->"Tennis" [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+"Debilidad" [shape=box, label="Debilidad", color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+"Planificacion" [shape=box, label="Planificacion", color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+"Natacion" [shape=box, label="Natacion", color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+"Actividad"->"Natacion" [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+"Beneficio" [shape=box, label="Beneficio", color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+"Paciente" [shape=box, label="Paciente", color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+"Senderismo" [shape=box, label="Senderismo", color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+"Actividad"->"Senderismo" [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+"GimnasiaPesas" [shape=box, label="GimnasiaPesas", color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+"Actividad"->"GimnasiaPesas" [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+"Yoga" [shape=box, label="Yoga", color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+"Actividad"->"Yoga" [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+"Enfermedad" [shape=box, label="Enfermedad", color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+"Asignacion" [shape=box, label="Asignacion", color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+"Actividad" [shape=box, label="Actividad", color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0"]
+}

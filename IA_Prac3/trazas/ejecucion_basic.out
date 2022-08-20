@@ -1,0 +1,77 @@
+
+ff: parsing domain file
+domain 'ROVER' defined
+ ... done.
+ff: parsing problem file
+problem 'BASIC' defined
+ ... done.
+
+
+no metric specified. plan length assumed.
+
+checking for cyclic := effects --- OK.
+
+ff: search configuration is  best-first on 1*g(s) + 5*h(s) where
+    metric is  plan length
+
+advancing to distance:   22
+                         21
+                         20
+                         19
+                         18
+                         17
+                         16
+                         15
+                         14
+                         13
+                         12
+                         11
+                         10
+                          9
+                          8
+                          7
+                          6
+                          5
+                          4
+                          3
+                          2
+                          1
+                          0
+
+ff: found legal plan as follows
+
+step    0: MOVE_TO_LUGAR ASE_B ASE_A R
+        1: ADD_PERSONAL A R ASE_A
+        2: ADD_PERSONAL B R ASE_A
+        3: ADD_PERSONAL C R ASE_A
+        4: ADD_PERSONAL D R ASE_A
+        5: ADD_PERSONAL E R ASE_A
+        6: MOVE_TO_LUGAR ASE_A ASE_B R
+        7: DROP_PERSONAL R A ASE_B AA
+        8: DROP_PERSONAL R B ASE_B BB
+        9: DROP_PERSONAL R C ASE_B CC
+       10: DROP_PERSONAL R D ASE_B DD
+       11: DROP_PERSONAL R E ASE_B EE
+       12: MOVE_TO_LUGAR ASE_B ASE_A R
+       13: MOVE_TO_LUGAR ASE_A ALM R
+       14: ADD_SUMINISTRO V R ALM
+       15: ADD_SUMINISTRO W R ALM
+       16: ADD_SUMINISTRO X R ALM
+       17: ADD_SUMINISTRO Y R ALM
+       18: ADD_SUMINISTRO Z R ALM
+       19: MOVE_TO_LUGAR ALM ASE_A R
+       20: DROP_SUMINISTRO R V ASE_A AA
+       21: DROP_SUMINISTRO R W ASE_A BB
+       22: DROP_SUMINISTRO R X ASE_A CC
+       23: DROP_SUMINISTRO R Y ASE_A DD
+       24: DROP_SUMINISTRO R Z ASE_A EE
+     
+
+time spent:    0.00 seconds instantiating 115 easy, 4 hard action templates
+               0.00 seconds reachability analysis, yielding 86 facts and 64 actions
+               0.00 seconds creating final representation with 66 relevant facts, 0 relevant fluents
+               0.00 seconds computing LNF
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 173 states, to a max depth of 0
+               0.00 seconds total time
+
